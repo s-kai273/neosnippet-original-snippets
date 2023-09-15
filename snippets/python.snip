@@ -15,10 +15,10 @@ options     word
 	[$1 for ${1:x} in ${2:#list}]
 
 snippet     int_input
-options     head
+options     word
 	int(input())
 
 snippet     int_input_list
 abbr        [int(x) for x in input().split()]
-options     head
+options     word
 	[int(${1}) for ${1:x} in input().split(${2:#delimiter})]
