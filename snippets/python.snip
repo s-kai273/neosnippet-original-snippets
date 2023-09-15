@@ -18,3 +18,7 @@ snippet     int_input
 options     head
 	int(input())
 
+snippet     int_input_list
+abbr        [int(x) for x in input().split()]
+options     head
+	[int(${1}) for ${1:x} in input().split(${2:#delimiter})]
