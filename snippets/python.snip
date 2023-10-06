@@ -4,21 +4,21 @@ options     head
 	print(${1:#:TARGET})
 	${0}
 
-snippet     if_else
+snippet     ifelse
 abbr        A if condition else B
 options     word
 	${1} if ${2:#:condition} else ${3}
 
-snippet     for_list
+snippet     forlist
 abbr        [x for x in {list}]
 options     word
 	[$1${0} for ${1:x} in ${2:#list}]
 
-snippet     int_input
+snippet     intinput
 options     word
 	int(input())
 
-snippet     int_input_list
+snippet     intinputlist
 abbr        [int(x) for x in input().split()]
 options     word
 	[int($1) for ${1:x} in input().split(${2})]
